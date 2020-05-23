@@ -13148,7 +13148,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[1]:</div>
+<div class="prompt input_prompt">In&nbsp;[14]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="o">%</span><span class="k">load_ext</span> autoreload
@@ -13160,10 +13160,29 @@ div#notebook {
 </div>
 </div>
 
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>The autoreload extension is already loaded. To reload it, use:
+  %reload_ext autoreload
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[2]:</div>
+<div class="prompt input_prompt">In&nbsp;[15]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">collections</span>
@@ -13185,24 +13204,6 @@ div#notebook {
 </div>
 </div>
 
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt"></div>
-
-
-<div class="output_subarea output_stream output_stderr output_text">
-<pre>Using TensorFlow backend.
-</pre>
-</div>
-</div>
-
-</div>
-</div>
-
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
@@ -13218,7 +13219,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[3]:</div>
+<div class="prompt input_prompt">In&nbsp;[16]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">tensorflow.python.client</span> <span class="k">import</span> <span class="n">device_lib</span>
@@ -13244,14 +13245,14 @@ device_type: &#34;CPU&#34;
 memory_limit: 268435456
 locality {
 }
-incarnation: 9502038164401532669
+incarnation: 14408448786407184459
 , name: &#34;/gpu:0&#34;
 device_type: &#34;GPU&#34;
-memory_limit: 357367808
+memory_limit: 313393152
 locality {
   bus_id: 1
 }
-incarnation: 3462315889322079838
+incarnation: 5096190845953611802
 physical_device_desc: &#34;device: 0, name: Tesla K80, pci bus id: 0000:00:04.0&#34;
 ]
 </pre>
@@ -13273,7 +13274,7 @@ physical_device_desc: &#34;device: 0, name: Tesla K80, pci bus id: 0000:00:04.0&
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[4]:</div>
+<div class="prompt input_prompt">In&nbsp;[17]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Load English data</span>
@@ -13317,7 +13318,7 @@ physical_device_desc: &#34;device: 0, name: Tesla K80, pci bus id: 0000:00:04.0&
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[5]:</div>
+<div class="prompt input_prompt">In&nbsp;[18]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">for</span> <span class="n">sample_i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">2</span><span class="p">):</span>
@@ -13362,7 +13363,7 @@ small_vocab_fr Line 2:  les états-unis est généralement froid en juillet , et
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[6]:</div>
+<div class="prompt input_prompt">In&nbsp;[19]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">english_words_counter</span> <span class="o">=</span> <span class="n">collections</span><span class="o">.</span><span class="n">Counter</span><span class="p">([</span><span class="n">word</span> <span class="k">for</span> <span class="n">sentence</span> <span class="ow">in</span> <span class="n">english_sentences</span> <span class="k">for</span> <span class="n">word</span> <span class="ow">in</span> <span class="n">sentence</span><span class="o">.</span><span class="n">split</span><span class="p">()])</span>
@@ -13430,7 +13431,7 @@ small_vocab_fr Line 2:  les états-unis est généralement froid en juillet , et
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[7]:</div>
+<div class="prompt input_prompt">In&nbsp;[20]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">tokenize</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
@@ -13504,7 +13505,7 @@ Sequence 3 in x
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[8]:</div>
+<div class="prompt input_prompt">In&nbsp;[21]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">pad</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">length</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
@@ -13568,7 +13569,7 @@ Sequence 3 in x
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[9]:</div>
+<div class="prompt input_prompt">In&nbsp;[22]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">preprocess</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">):</span>
@@ -13650,7 +13651,7 @@ You will begin by training four relatively simple architectures.</p>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[10]:</div>
+<div class="prompt input_prompt">In&nbsp;[23]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">logits_to_text</span><span class="p">(</span><span class="n">logits</span><span class="p">,</span> <span class="n">tokenizer</span><span class="p">):</span>
@@ -14000,7 +14001,7 @@ new jersey est parfois calme en l&#39; et il est est en en &lt;PAD&gt; &lt;PAD&g
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[14]:</div>
+<div class="prompt input_prompt">In&nbsp;[25]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">encdec_model</span><span class="p">(</span><span class="n">input_shape</span><span class="p">,</span> <span class="n">output_sequence_length</span><span class="p">,</span> <span class="n">english_vocab_size</span><span class="p">,</span> <span class="n">french_vocab_size</span><span class="p">):</span>
@@ -14063,26 +14064,26 @@ new jersey est parfois calme en l&#39; et il est est en en &lt;PAD&gt; &lt;PAD&g
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>Train on 110288 samples, validate on 27573 samples
 Epoch 1/10
-110288/110288 [==============================] - 20s 178us/step - loss: 3.0374 - acc: 0.4323 - val_loss: 2.3851 - val_acc: 0.4842
+110288/110288 [==============================] - 21s 195us/step - loss: 3.0506 - acc: 0.4278 - val_loss: 2.3770 - val_acc: 0.4805
 Epoch 2/10
-110288/110288 [==============================] - 19s 168us/step - loss: 2.1644 - acc: 0.4952 - val_loss: 2.0267 - val_acc: 0.5126
+110288/110288 [==============================] - 20s 179us/step - loss: 2.1758 - acc: 0.4884 - val_loss: 2.0439 - val_acc: 0.5069
 Epoch 3/10
-110288/110288 [==============================] - 19s 168us/step - loss: 1.9457 - acc: 0.5237 - val_loss: 1.8534 - val_acc: 0.5436
+110288/110288 [==============================] - 20s 179us/step - loss: 1.9805 - acc: 0.5155 - val_loss: 1.9063 - val_acc: 0.5212
 Epoch 4/10
-110288/110288 [==============================] - 19s 169us/step - loss: 1.7756 - acc: 0.5585 - val_loss: 1.7075 - val_acc: 0.5732
+110288/110288 [==============================] - 20s 179us/step - loss: 1.8409 - acc: 0.5353 - val_loss: 1.7690 - val_acc: 0.5555
 Epoch 5/10
-110288/110288 [==============================] - 19s 168us/step - loss: 1.6522 - acc: 0.5812 - val_loss: 1.6050 - val_acc: 0.5866
+110288/110288 [==============================] - 20s 179us/step - loss: 1.7173 - acc: 0.5606 - val_loss: 1.6643 - val_acc: 0.5727
 Epoch 6/10
-110288/110288 [==============================] - 19s 168us/step - loss: 1.5644 - acc: 0.5918 - val_loss: 1.5235 - val_acc: 0.5978
+110288/110288 [==============================] - 20s 180us/step - loss: 1.6274 - acc: 0.5805 - val_loss: 1.5854 - val_acc: 0.5883
 Epoch 7/10
-110288/110288 [==============================] - 19s 169us/step - loss: 1.4958 - acc: 0.6021 - val_loss: 1.4626 - val_acc: 0.6091
+110288/110288 [==============================] - 20s 179us/step - loss: 1.5553 - acc: 0.5928 - val_loss: 1.5224 - val_acc: 0.5974
 Epoch 8/10
-110288/110288 [==============================] - 19s 169us/step - loss: 1.4408 - acc: 0.6107 - val_loss: 1.4218 - val_acc: 0.6121
+110288/110288 [==============================] - 20s 181us/step - loss: 1.4951 - acc: 0.6016 - val_loss: 1.4699 - val_acc: 0.6027
 Epoch 9/10
-110288/110288 [==============================] - 19s 169us/step - loss: 1.3991 - acc: 0.6187 - val_loss: 1.3777 - val_acc: 0.6224
+110288/110288 [==============================] - 20s 179us/step - loss: 1.4433 - acc: 0.6089 - val_loss: 1.4186 - val_acc: 0.6161
 Epoch 10/10
-110288/110288 [==============================] - 19s 169us/step - loss: 1.3633 - acc: 0.6263 - val_loss: 1.3584 - val_acc: 0.6247
-new jersey est est agréable en mois et il est est en en &lt;PAD&gt; &lt;PAD&gt; &lt;PAD&gt; &lt;PAD&gt; &lt;PAD&gt; &lt;PAD&gt; &lt;PAD&gt; &lt;PAD&gt;
+110288/110288 [==============================] - 20s 180us/step - loss: 1.4046 - acc: 0.6151 - val_loss: 1.3942 - val_acc: 0.6129
+new jersey est est en en mois et il est est en en &lt;PAD&gt; &lt;PAD&gt; &lt;PAD&gt; &lt;PAD&gt; &lt;PAD&gt; &lt;PAD&gt; &lt;PAD&gt; &lt;PAD&gt;
 </pre>
 </div>
 </div>
@@ -14101,7 +14102,7 @@ new jersey est est agréable en mois et il est est en en &lt;PAD&gt; &lt;PAD&gt;
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[15]:</div>
+<div class="prompt input_prompt">In&nbsp;[12]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">model_final</span><span class="p">(</span><span class="n">input_shape</span><span class="p">,</span> <span class="n">output_sequence_length</span><span class="p">,</span> <span class="n">english_vocab_size</span><span class="p">,</span> <span class="n">french_vocab_size</span><span class="p">):</span>
@@ -14132,21 +14133,6 @@ new jersey est est agréable en mois et il est est en en &lt;PAD&gt; &lt;PAD&gt;
 
 
 <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Final Model Loaded&#39;</span><span class="p">)</span>
-<span class="c1"># TODO: Train the final model</span>
-<span class="n">tmp_x</span> <span class="o">=</span> <span class="n">pad</span><span class="p">(</span><span class="n">preproc_english_sentences</span><span class="p">,</span> <span class="n">max_french_sequence_length</span><span class="p">)</span>
-<span class="n">tmp_x</span> <span class="o">=</span> <span class="n">tmp_x</span><span class="o">.</span><span class="n">reshape</span><span class="p">((</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="n">preproc_french_sentences</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="o">-</span><span class="mi">2</span><span class="p">]))</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;test&quot;</span><span class="p">,</span> <span class="n">tmp_x</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span>
-
-<span class="c1"># Train the neural network</span>
-<span class="n">final_rnn_model</span> <span class="o">=</span> <span class="n">model_final</span><span class="p">(</span>
-    <span class="n">tmp_x</span><span class="o">.</span><span class="n">shape</span><span class="p">,</span>
-    <span class="n">max_french_sequence_length</span><span class="p">,</span>
-    <span class="n">english_vocab_size</span><span class="o">+</span><span class="mi">1</span><span class="p">,</span>
-    <span class="n">french_vocab_size</span><span class="o">+</span><span class="mi">1</span><span class="p">)</span>
-<span class="n">final_rnn_model</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">tmp_x</span><span class="p">,</span> <span class="n">preproc_french_sentences</span><span class="p">,</span> <span class="n">batch_size</span><span class="o">=</span><span class="mi">1024</span><span class="p">,</span> <span class="n">epochs</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span> <span class="n">validation_split</span><span class="o">=</span><span class="mf">0.2</span><span class="p">)</span>
-
-<span class="c1"># Print prediction(s)</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">logits_to_text</span><span class="p">(</span><span class="n">final_rnn_model</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">tmp_x</span><span class="p">[:</span><span class="mi">1</span><span class="p">])[</span><span class="mi">0</span><span class="p">],</span> <span class="n">french_tokenizer</span><span class="p">))</span>
 </pre></div>
 
     </div>
@@ -14164,29 +14150,6 @@ new jersey est est agréable en mois et il est est en en &lt;PAD&gt; &lt;PAD&gt;
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>Final Model Loaded
-test (137861, 21)
-Train on 110288 samples, validate on 27573 samples
-Epoch 1/10
-110288/110288 [==============================] - 22s 199us/step - loss: 3.3216 - acc: 0.4159 - val_loss: 2.5393 - val_acc: 0.4538
-Epoch 2/10
-110288/110288 [==============================] - 21s 186us/step - loss: 2.2634 - acc: 0.4886 - val_loss: 2.0485 - val_acc: 0.5006
-Epoch 3/10
-110288/110288 [==============================] - 21s 186us/step - loss: 1.9645 - acc: 0.5154 - val_loss: 1.8858 - val_acc: 0.5279
-Epoch 4/10
-110288/110288 [==============================] - 21s 186us/step - loss: 1.8237 - acc: 0.5404 - val_loss: 1.7673 - val_acc: 0.5542
-Epoch 5/10
-110288/110288 [==============================] - 21s 186us/step - loss: 1.6941 - acc: 0.5695 - val_loss: 1.6211 - val_acc: 0.5872
-Epoch 6/10
-110288/110288 [==============================] - 21s 186us/step - loss: 1.5626 - acc: 0.5978 - val_loss: 1.5046 - val_acc: 0.6094
-Epoch 7/10
-110288/110288 [==============================] - 21s 186us/step - loss: 1.4476 - acc: 0.6219 - val_loss: 1.3941 - val_acc: 0.6371
-Epoch 8/10
-110288/110288 [==============================] - 21s 186us/step - loss: 1.3481 - acc: 0.6441 - val_loss: 1.2996 - val_acc: 0.6535
-Epoch 9/10
-110288/110288 [==============================] - 21s 187us/step - loss: 1.2634 - acc: 0.6589 - val_loss: 1.2244 - val_acc: 0.6656
-Epoch 10/10
-110288/110288 [==============================] - 21s 187us/step - loss: 1.1903 - acc: 0.6751 - val_loss: 1.1580 - val_acc: 0.6844
-new jersey est parfois agréable en l&#39; et il est est en en &lt;PAD&gt; &lt;PAD&gt; &lt;PAD&gt; &lt;PAD&gt; &lt;PAD&gt; &lt;PAD&gt; &lt;PAD&gt; &lt;PAD&gt;
 </pre>
 </div>
 </div>
@@ -14204,7 +14167,7 @@ new jersey est parfois agréable en l&#39; et il est est en en &lt;PAD&gt; &lt;P
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[27]:</div>
+<div class="prompt input_prompt">In&nbsp;[24]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">final_predictions</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">x_tk</span><span class="p">,</span> <span class="n">y_tk</span><span class="p">):</span>
@@ -14216,8 +14179,15 @@ new jersey est parfois agréable en l&#39; et il est est en en &lt;PAD&gt; &lt;P
 <span class="sd">    :param y_tk: French tokenizer</span>
 <span class="sd">    &quot;&quot;&quot;</span>
     <span class="c1"># TODO: Train neural network using model_final</span>
-    <span class="n">model</span> <span class="o">=</span> <span class="n">final_rnn_model</span>
+    <span class="n">x</span> <span class="o">=</span> <span class="n">pad</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">max_french_sequence_length</span><span class="p">)</span>
 
+    <span class="c1"># Train the neural network</span>
+    <span class="n">model</span> <span class="o">=</span> <span class="n">model_final</span><span class="p">(</span>
+            <span class="n">x</span><span class="o">.</span><span class="n">shape</span><span class="p">,</span>
+            <span class="n">max_french_sequence_length</span><span class="p">,</span>
+            <span class="n">english_vocab_size</span><span class="o">+</span><span class="mi">1</span><span class="p">,</span>
+            <span class="n">french_vocab_size</span><span class="o">+</span><span class="mi">1</span><span class="p">)</span>
+    <span class="n">model</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">batch_size</span><span class="o">=</span><span class="mi">512</span><span class="p">,</span> <span class="n">epochs</span><span class="o">=</span><span class="mi">40</span><span class="p">,</span> <span class="n">validation_split</span><span class="o">=</span><span class="mf">0.2</span><span class="p">)</span>
     
     <span class="c1">## DON&#39;T EDIT ANYTHING BELOW THIS LINE</span>
     <span class="n">y_id_to_word</span> <span class="o">=</span> <span class="p">{</span><span class="n">value</span><span class="p">:</span> <span class="n">key</span> <span class="k">for</span> <span class="n">key</span><span class="p">,</span> <span class="n">value</span> <span class="ow">in</span> <span class="n">y_tk</span><span class="o">.</span><span class="n">word_index</span><span class="o">.</span><span class="n">items</span><span class="p">()}</span>
@@ -14225,8 +14195,8 @@ new jersey est parfois agréable en l&#39; et il est est en en &lt;PAD&gt; &lt;P
 
     <span class="n">sentence</span> <span class="o">=</span> <span class="s1">&#39;he saw a old yellow truck&#39;</span>
     <span class="n">sentence</span> <span class="o">=</span> <span class="p">[</span><span class="n">x_tk</span><span class="o">.</span><span class="n">word_index</span><span class="p">[</span><span class="n">word</span><span class="p">]</span> <span class="k">for</span> <span class="n">word</span> <span class="ow">in</span> <span class="n">sentence</span><span class="o">.</span><span class="n">split</span><span class="p">()]</span>
-    <span class="n">sentence</span> <span class="o">=</span> <span class="n">pad_sequences</span><span class="p">([</span><span class="n">sentence</span><span class="p">],</span> <span class="n">maxlen</span><span class="o">=</span><span class="n">tmp_x</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">padding</span><span class="o">=</span><span class="s1">&#39;post&#39;</span><span class="p">)</span>
-    <span class="n">sentences</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="n">sentence</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">tmp_x</span><span class="p">[</span><span class="mi">0</span><span class="p">]])</span>
+    <span class="n">sentence</span> <span class="o">=</span> <span class="n">pad_sequences</span><span class="p">([</span><span class="n">sentence</span><span class="p">],</span> <span class="n">maxlen</span><span class="o">=</span><span class="n">x</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">padding</span><span class="o">=</span><span class="s1">&#39;post&#39;</span><span class="p">)</span>
+    <span class="n">sentences</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="n">sentence</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">x</span><span class="p">[</span><span class="mi">0</span><span class="p">]])</span>
     <span class="n">predictions</span> <span class="o">=</span> <span class="n">model</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">sentences</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">sentences</span><span class="p">))</span>
 
     <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Sample 1:&#39;</span><span class="p">)</span>
@@ -14254,11 +14224,92 @@ new jersey est parfois agréable en l&#39; et il est est en en &lt;PAD&gt; &lt;P
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>Sample 1:
-il a conduit cette voiture voiture voiture &lt;PAD&gt; &lt;PAD&gt; &lt;PAD&gt; &lt;PAD&gt; &lt;PAD&gt; &lt;PAD&gt; &lt;PAD&gt; &lt;PAD&gt; &lt;PAD&gt; &lt;PAD&gt; &lt;PAD&gt; &lt;PAD&gt; &lt;PAD&gt; &lt;PAD&gt;
+<pre>Train on 110288 samples, validate on 27573 samples
+Epoch 1/40
+110288/110288 [==============================] - 34s 305us/step - loss: 2.7529 - acc: 0.4531 - val_loss: 2.0283 - val_acc: 0.5103
+Epoch 2/40
+110288/110288 [==============================] - 33s 295us/step - loss: 1.8701 - acc: 0.5286 - val_loss: 1.7005 - val_acc: 0.5599
+Epoch 3/40
+110288/110288 [==============================] - 32s 294us/step - loss: 1.5697 - acc: 0.5864 - val_loss: 1.4571 - val_acc: 0.6113
+Epoch 4/40
+110288/110288 [==============================] - 32s 293us/step - loss: 1.3835 - acc: 0.6258 - val_loss: 1.3150 - val_acc: 0.6422
+Epoch 5/40
+110288/110288 [==============================] - 32s 294us/step - loss: 1.2542 - acc: 0.6555 - val_loss: 1.1939 - val_acc: 0.6711
+Epoch 6/40
+110288/110288 [==============================] - 32s 294us/step - loss: 1.1471 - acc: 0.6814 - val_loss: 1.0954 - val_acc: 0.6981
+Epoch 7/40
+110288/110288 [==============================] - 33s 295us/step - loss: 1.0477 - acc: 0.7111 - val_loss: 1.0073 - val_acc: 0.7217
+Epoch 8/40
+110288/110288 [==============================] - 32s 294us/step - loss: 0.9689 - acc: 0.7305 - val_loss: 0.9396 - val_acc: 0.7356
+Epoch 9/40
+110288/110288 [==============================] - 33s 295us/step - loss: 0.9078 - acc: 0.7427 - val_loss: 0.8839 - val_acc: 0.7467
+Epoch 10/40
+110288/110288 [==============================] - 32s 294us/step - loss: 0.8592 - acc: 0.7536 - val_loss: 0.8424 - val_acc: 0.7573
+Epoch 11/40
+110288/110288 [==============================] - 33s 295us/step - loss: 0.8132 - acc: 0.7647 - val_loss: 0.7966 - val_acc: 0.7688
+Epoch 12/40
+110288/110288 [==============================] - 32s 292us/step - loss: 0.7756 - acc: 0.7730 - val_loss: 0.7605 - val_acc: 0.7774
+Epoch 13/40
+110288/110288 [==============================] - 33s 295us/step - loss: 0.7393 - acc: 0.7823 - val_loss: 0.7212 - val_acc: 0.7866
+Epoch 14/40
+110288/110288 [==============================] - 33s 295us/step - loss: 0.7034 - acc: 0.7925 - val_loss: 0.6823 - val_acc: 0.7984
+Epoch 15/40
+110288/110288 [==============================] - 33s 296us/step - loss: 0.6628 - acc: 0.8039 - val_loss: 0.6465 - val_acc: 0.8092
+Epoch 16/40
+110288/110288 [==============================] - 32s 294us/step - loss: 0.6255 - acc: 0.8146 - val_loss: 0.6077 - val_acc: 0.8201
+Epoch 17/40
+110288/110288 [==============================] - 32s 294us/step - loss: 0.5846 - acc: 0.8268 - val_loss: 0.5673 - val_acc: 0.8311
+Epoch 18/40
+110288/110288 [==============================] - 33s 295us/step - loss: 0.5460 - acc: 0.8376 - val_loss: 0.5306 - val_acc: 0.8427
+Epoch 19/40
+110288/110288 [==============================] - 32s 294us/step - loss: 0.5072 - acc: 0.8492 - val_loss: 0.5001 - val_acc: 0.8524
+Epoch 20/40
+110288/110288 [==============================] - 33s 296us/step - loss: 0.4743 - acc: 0.8591 - val_loss: 0.4752 - val_acc: 0.8600
+Epoch 21/40
+110288/110288 [==============================] - 32s 292us/step - loss: 0.4414 - acc: 0.8694 - val_loss: 0.4298 - val_acc: 0.8732
+Epoch 22/40
+110288/110288 [==============================] - 32s 294us/step - loss: 0.4130 - acc: 0.8781 - val_loss: 0.3996 - val_acc: 0.8830
+Epoch 23/40
+110288/110288 [==============================] - 32s 293us/step - loss: 0.3788 - acc: 0.8891 - val_loss: 0.3841 - val_acc: 0.8887
+Epoch 24/40
+110288/110288 [==============================] - 32s 292us/step - loss: 0.3501 - acc: 0.8991 - val_loss: 0.3430 - val_acc: 0.9015
+Epoch 25/40
+110288/110288 [==============================] - 33s 296us/step - loss: 0.3249 - acc: 0.9078 - val_loss: 0.3229 - val_acc: 0.9093
+Epoch 26/40
+110288/110288 [==============================] - 32s 293us/step - loss: 0.3007 - acc: 0.9158 - val_loss: 0.3014 - val_acc: 0.9157
+Epoch 27/40
+110288/110288 [==============================] - 32s 294us/step - loss: 0.2783 - acc: 0.9230 - val_loss: 0.2780 - val_acc: 0.9228
+Epoch 28/40
+110288/110288 [==============================] - 32s 293us/step - loss: 0.2601 - acc: 0.9283 - val_loss: 0.2570 - val_acc: 0.9294
+Epoch 29/40
+110288/110288 [==============================] - 32s 292us/step - loss: 0.2391 - acc: 0.9343 - val_loss: 0.2417 - val_acc: 0.9333
+Epoch 30/40
+110288/110288 [==============================] - 32s 293us/step - loss: 0.2273 - acc: 0.9377 - val_loss: 0.2404 - val_acc: 0.9327
+Epoch 31/40
+110288/110288 [==============================] - 32s 293us/step - loss: 0.2104 - acc: 0.9425 - val_loss: 0.2154 - val_acc: 0.9413
+Epoch 32/40
+110288/110288 [==============================] - 32s 294us/step - loss: 0.1998 - acc: 0.9459 - val_loss: 0.2022 - val_acc: 0.9454
+Epoch 33/40
+110288/110288 [==============================] - 33s 295us/step - loss: 0.1820 - acc: 0.9513 - val_loss: 0.1915 - val_acc: 0.9482
+Epoch 34/40
+110288/110288 [==============================] - 32s 293us/step - loss: 0.1753 - acc: 0.9528 - val_loss: 0.1873 - val_acc: 0.9496
+Epoch 35/40
+110288/110288 [==============================] - 32s 293us/step - loss: 0.1667 - acc: 0.9556 - val_loss: 0.1820 - val_acc: 0.9518
+Epoch 36/40
+110288/110288 [==============================] - 33s 296us/step - loss: 0.1601 - acc: 0.9574 - val_loss: 0.1675 - val_acc: 0.9565
+Epoch 37/40
+110288/110288 [==============================] - 33s 295us/step - loss: 0.1521 - acc: 0.9597 - val_loss: 0.1587 - val_acc: 0.9586
+Epoch 38/40
+110288/110288 [==============================] - 33s 296us/step - loss: 0.1458 - acc: 0.9614 - val_loss: 0.2000 - val_acc: 0.9460
+Epoch 39/40
+110288/110288 [==============================] - 32s 293us/step - loss: 0.1378 - acc: 0.9637 - val_loss: 0.1498 - val_acc: 0.9600
+Epoch 40/40
+110288/110288 [==============================] - 32s 294us/step - loss: 0.1309 - acc: 0.9657 - val_loss: 0.1421 - val_acc: 0.9628
+Sample 1:
+il a vu un vieux camion jaune &lt;PAD&gt; &lt;PAD&gt; &lt;PAD&gt; &lt;PAD&gt; &lt;PAD&gt; &lt;PAD&gt; &lt;PAD&gt; &lt;PAD&gt; &lt;PAD&gt; &lt;PAD&gt; &lt;PAD&gt; &lt;PAD&gt; &lt;PAD&gt; &lt;PAD&gt;
 Il a vu un vieux camion jaune
 Sample 2:
-new jersey est parfois agréable en l&#39; et il est est en en &lt;PAD&gt; &lt;PAD&gt; &lt;PAD&gt; &lt;PAD&gt; &lt;PAD&gt; &lt;PAD&gt; &lt;PAD&gt; &lt;PAD&gt;
+new jersey est parfois calme pendant l&#39; automne et il est neigeux en avril &lt;PAD&gt; &lt;PAD&gt; &lt;PAD&gt; &lt;PAD&gt; &lt;PAD&gt; &lt;PAD&gt; &lt;PAD&gt;
 new jersey est parfois calme pendant l&#39; automne et il est neigeux en avril &lt;PAD&gt; &lt;PAD&gt; &lt;PAD&gt; &lt;PAD&gt; &lt;PAD&gt; &lt;PAD&gt; &lt;PAD&gt;
 </pre>
 </div>
